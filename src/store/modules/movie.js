@@ -62,7 +62,8 @@ const actions = {
         dispatch("setMovieLoading", false);
         dispatch("setMovieVideosLoad", false);
       })
-      .catch(error => console.log(error));
+      .catch(error => "Errors" + error);
+      // .catch(error => console.log(error));
   },
   fetchMovieCredits: ({ commit }, movieId) => {
     let lang = languages.getters.languageCurrent(languages.state);
@@ -79,7 +80,8 @@ const actions = {
           credits: res.data
         });
       })
-      .catch(error => console.log(error));
+      .catch(error => "Errors" + error);
+      // .catch(error => console.log(error));
   },
   fetchMovieVideos: ({ commit, dispatch }, movieId) => {
     let lang = languages.getters.languageCurrent(languages.state);
@@ -97,7 +99,8 @@ const actions = {
         });
         dispatch("setMovieVideosLoad", true);
       })
-      .catch(error => console.log(error));
+      .catch(error => "Errors" + error);
+      // .catch(error => console.log(error));
   }
 };
 const getters = {

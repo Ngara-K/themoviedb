@@ -35,7 +35,8 @@ const actions = {
       .then(() => {
         dispatch("changeCurrentLanguage", "en");
       })
-      .catch(error => console.log(error));
+      .catch(error => "Errors" + error);
+      // .catch(error => console.log(error));
   }
 };
 const getters = {

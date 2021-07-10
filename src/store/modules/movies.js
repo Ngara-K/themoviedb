@@ -61,7 +61,8 @@ const actions = {
         });
         dispatch("setMoviesLoading", false);
       })
-      .catch(error => console.log(error));
+      .catch(error => "Errors" + error);
+      // .catch(error => console.log(error));
   },
   fetchListsData: ({ commit }) => {
     let lang = languages.getters.languageCurrent(languages.state);
@@ -80,7 +81,8 @@ const actions = {
             samples: res.data.results
           });
         })
-        .catch(error => console.log(error));
+        .catch(error => "Errors" + error);
+        // .catch(error => console.log(error));
     });
   },
   fetchMovies: ({ commit, dispatch }, [listType, page = 1]) => {
@@ -109,7 +111,8 @@ const actions = {
         });
         dispatch("setMoviesLoading", false);
       })
-      .catch(error => console.log(error));
+      .catch(error => "Errors" + error);
+      // .catch(error => console.log(error));
   },
   fetchTrending: ({ commit }) => {
     let lang = languages.getters.languageCurrent(languages.state);
@@ -124,7 +127,8 @@ const actions = {
           movies: res.data.results
         });
       })
-      .catch(error => console.log(error));
+      .catch(error => "Errors" + error);
+      // .catch(error => console.log(error));
   }
 };
 const getters = {
