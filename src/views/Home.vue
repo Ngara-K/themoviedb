@@ -18,20 +18,20 @@
         <movie-preview :movie="movie"></movie-preview>
       </slide>
     </carousel>
-    <div
+    <!-- <div
       v-if="!moviesLoading"
       class="mb-4 pb-1 border-b border-gray-400 border-gray-400 text-2xl font-bold text-teal-900"
     >
       The Most Newly Created Movie
-    </div>
-    <movie-preview v-if="!moviesLoading" :movie="latestMovie"></movie-preview>
-    <div v-else class="text-center my-6">
+    </div> -->
+    <!-- <movie-preview v-if="!moviesLoading" :movie="latestMovie"></movie-preview> -->
+    <!-- <div v-else class="text-center my-6">
       <div
         class="bg-teal-500 hover:bg-teal-400 text-white py-2 px-4 hover:border-teal-500 rounded text-2xl inline-block"
       >
         <font-awesome-icon icon="spinner" class="fa-spin"></font-awesome-icon>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

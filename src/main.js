@@ -8,6 +8,12 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import VueClazyLoad from "vue-clazy-load";
 
+import Ads from 'vue-google-adsense'
+
+Vue.use(require('vue-script2'))
+
+Vue.use(Ads.AutoAdsense, { adClient: 'ca-pub-5358676928061541' })
+
 Vue.use(VueClazyLoad);
 
 library.add(fas);
