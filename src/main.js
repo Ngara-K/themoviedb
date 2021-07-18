@@ -11,6 +11,7 @@ import VueClazyLoad from "vue-clazy-load";
 import Ads from 'vue-google-adsense'
 
 Vue.use(require('vue-script2'))
+import "@fontsource/jost"; // Defaults to weight 400.
 
 Vue.use(Ads.AutoAdsense, { adClient: 'ca-pub-5358676928061541' })
 
@@ -21,6 +22,7 @@ library.add(fas);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 import "@/assets/css/tailwind.css";
+import "@/assets/css/custom.css";
 
 Vue.config.productionTip = false;
 
