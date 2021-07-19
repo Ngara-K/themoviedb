@@ -5,7 +5,7 @@
         <nav class="flex items-center justify-between flex-wrap p-3">
           <div
             class="flex w-full sm:w-auto mb-2 items-center flex-shrink-0 text-teal-400">
-            <span class="font-semibold text-xl tracking-tight m-auto">The Movie DB Ratings</span>
+            <span class="font-semibold text-xl tracking-tight m-auto">Movie Ratings</span>
           </div>
           <div class="flex w-1/2 sm:w-auto justify-center">
             <router-link to="/" class="hover:text-teal-200 text-white p-2" exact

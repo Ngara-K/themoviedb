@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <div
-      class="mb-4 pb-1 border-b border-gray-400 border-gray-400 text-2xl font-bold text-teal-900"
-    >
+    <div class="mb-4 pb-1 border-b border-gray-400 border-gray-400 font-bold text-teal-900">
       Daily Movie Trends
     </div>
     <carousel
